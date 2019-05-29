@@ -22,7 +22,8 @@ import cn.sharesdk.demo.platform.PlatformAuthorizeUserInfoManager;
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 
-import static cn.sharesdk.demo.utils.CommomDialog.dialog;
+import static cn.sharesdk.demo.utils.UtilDialog.dialog;
+
 
 /**
  * Created by yjin on 2017/5/9.

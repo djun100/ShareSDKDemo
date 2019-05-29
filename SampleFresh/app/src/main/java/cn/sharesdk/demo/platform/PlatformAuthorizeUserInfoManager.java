@@ -49,7 +49,8 @@ import cn.sharesdk.yixin.moments.YixinMoments;
 import cn.sharesdk.youdao.YouDao;
 import cn.sharesdk.youtube.Youtube;
 
-import static cn.sharesdk.demo.utils.CommomDialog.dialog;
+import static cn.sharesdk.demo.utils.UtilDialog.dialog;
+
 
 /**
  * Created by yjin on 2017/6/21.

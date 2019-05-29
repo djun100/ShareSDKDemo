@@ -51,8 +51,8 @@ public class DouyinShare {
 
     private void openSystemGallery(final Activity activity) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setMessage("Ìí¼ÓÏàÆ¬»òÊÓÆµ")
-                .setNegativeButton("ÊÓÆµ", new DialogInterface.OnClickListener() {
+        builder.setMessage("æ·»åŠ ç›¸ç‰‡æˆ–è§†é¢‘")
+                .setNegativeButton("è§†é¢‘", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(Intent.ACTION_PICK);
@@ -62,7 +62,7 @@ public class DouyinShare {
                         activity.startActivityForResult(intent, PHOTO_REQUEST_GALLERY);
                     }
                 })
-                .setPositiveButton("Í¼Æ¬", new DialogInterface.OnClickListener() {
+                .setPositiveButton("å›¾ç‰‡", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(Intent.ACTION_PICK);

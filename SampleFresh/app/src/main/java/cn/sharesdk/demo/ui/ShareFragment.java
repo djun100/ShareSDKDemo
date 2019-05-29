@@ -221,6 +221,6 @@ public class ShareFragment extends BaseFragment implements CallBackShotImageView
 	}
 
 	private void goToAnnouncement() {
-		getContext().startActivity(new Intent(getContext(), AnnouncementActivity.class));
+//		getContext().startActivity(new Intent(getContext(), AnnouncementActivity.class));
 	}
 }

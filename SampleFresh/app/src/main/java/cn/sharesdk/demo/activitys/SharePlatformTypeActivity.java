@@ -23,7 +23,6 @@ import java.util.List;
 
 import cn.sharesdk.demo.App;
 import cn.sharesdk.demo.R;
-import cn.sharesdk.demo.UriUtil;
 import cn.sharesdk.demo.adapter.SharePlatformAdapter;
 import cn.sharesdk.demo.entity.BaseEntity;
 import cn.sharesdk.demo.entity.ShareListItemInEntity;
@@ -37,7 +36,7 @@ import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 
 import static cn.sharesdk.demo.platform.douyin.DouyinShare.PHOTO_REQUEST_GALLERY;
-import static cn.sharesdk.demo.utils.CommomDialog.dialog;
+import static cn.sharesdk.demo.utils.UtilDialog.dialog;
 
 /**
  * Created by yjin on 2017/5/17.
@@ -148,8 +147,10 @@ public class SharePlatformTypeActivity extends BaseActivity implements View.OnCl
 			switch (requestCode) {
 				case PHOTO_REQUEST_GALLERY:
 					Uri uri = data.getData();
-					startShareImage(UriUtil.convertUriToPath(this,uri));
-					Log.e("QQQ", " 列表的路径： " + UriUtil.convertUriToPath(this,uri));
+//					startShareImage(UriUtil.convertUriToPath(this,uri));
+					startShareImage(uri.getPath());
+//					Log.e("QQQ", " 列表的路径： " + UriUtil.convertUriToPath(this,uri));
+					Log.e("QQQ", " 列表的路径： " + uri.getPath());
 					break;
 			}
 		}

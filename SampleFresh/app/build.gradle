@@ -3,7 +3,6 @@ apply from: '../MobSDK.gradle'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '28.0.1'
     signingConfigs {
         config {
             keyAlias 'demokey.keystore'
